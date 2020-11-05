@@ -29,6 +29,7 @@ nav {
     align-items: center;
     justify-content: center;
     height: 8rem;
+    width: inherit;
 }
 
 nav img {
@@ -125,7 +126,11 @@ main .carousel {
     background: #fff;
     height: auto;
 }
-
+.slidepic {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
 @media (min-width: 950px) {
     nav {
         display: flex;
@@ -184,5 +189,11 @@ main .carousel {
     .shade .description .bt button {
         background: rgba(20,100,5,0.2);
     }
+    /* .slidepic {
+        display: block;
+        float: left;
+        height: 100%;
+        width: 25%;
+    } */
 
 }
