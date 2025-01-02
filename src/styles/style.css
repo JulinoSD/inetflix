@@ -11,6 +11,29 @@
     font: 400 14px arial, sans-serif;
     list-style: none;
 }
+button {
+    padding: 0.7rem;
+    border-radius: 0.35rem;
+    -webkit-border-radius: 0.35rem;
+    -moz-border-radius: 0.35rem;
+    -ms-border-radius: 0.35rem;
+    -o-border-radius: 0.35rem;
+}
+.bt {
+    display: inline-flex;
+    gap: 10px;
+    color: yellow;
+}
+.bt button {
+    background:none;
+    border: #fff 1px solid;
+    color: #fff;
+    font-weight: bolder;
+}
+button:active {
+    background: #fff;
+    color: #000;
+}
 .navigation {
     background-color: var(--preto);
     display: flex;
@@ -45,5 +68,13 @@
     z-index: -1;
 }
 .description {
-    padding: 3rem;
+    padding: 2rem;
+}
+.description> :nth-child(2) {
+    margin: 1rem 0;
+    color: #fff;
+}
+.description > :nth-child(1){
+    font: bolder 1.25rem Arial, sans-serif;
+    color: #fff;
 }
