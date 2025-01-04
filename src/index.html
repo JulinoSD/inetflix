@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
     <link rel="stylesheet" href="styles/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="styles/owl/owl.theme.default.min.css">
@@ -23,23 +21,27 @@
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="menu">
-                <li>Inicio</li>
-                <li>Série</li>
-                <li>Filmes</li>
-                <li>Documentário</li>
+                <li class="btn">Inicio</li>
+                <li class="btn">Série</li>
+                <li class="btn">Filmes</li>
+                <li class="btn">Documentário</li>
             </ul>
-            <article class="modal hidden">
-                <div class="suspended-menu">
-                    <h1>Faça sua escolhe</h1>
-                    <ul>
-                        <li>Inicio</li>
-                        <li>Série</li>
-                        <li>Filmes</li>
-                        <li>Documentário</li>
-                    </ul>
-                </div>
-            </article>
         </nav>
+        <article class="modal">
+            <div class="suspended-menu">
+                <button class="close">
+                    <i class="fas fa-close"></i>
+                </button>
+                <h1>Faça sua escolhe</h1>
+                <ul>
+                    <li class="btn">Inicio</li>
+                    <li class="btn">Série</li>
+                    <li class="btn">Filmes</li>
+                    <li class="btn">Documentário</li>
+                </ul>
+                <input type="search" name="search" id="search" placeholder="filme, série, documentário" />
+            </div>
+        </article>
         <section class="shade">
             <!-- <img src="./img/cstv.jpg" alt="Castel Vania"> -->
             <div class="description">
@@ -47,9 +49,11 @@
                 <p>
                     Um caçador de vampiros luta para salvar uma cidade sitiada por um exército de criaturas controladas
                     pelo próprio Drácula. Inspirado no clássico videogame.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus velit minima magni quam ducimus obcaecati incidunt ullam, quisquam exercitationem quasi esse eius maiores temporibus porro sint nesciunt amet iure inventore!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus velit minima magni quam ducimus
+                    obcaecati incidunt ullam, quisquam exercitationem quasi esse eius maiores temporibus porro sint
+                    nesciunt amet iure inventore!
                 </p>
-                <div class="bt">
+                <div class="bt-calltoaction">
                     <button type="button" role="button">
                         <!-- <i data-feather="play"></i> -->
                         <i class="fas fa-play"></i>
