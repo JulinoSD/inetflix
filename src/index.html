@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
     <link rel="stylesheet" href="styles/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="styles/owl/owl.theme.default.min.css">
@@ -16,12 +19,26 @@
     <main>
         <nav class="navigation">
             <img src="./img/ltlg.png" alt="Netflix" />
-            <ul>
+            <button type="button" aria-label="menu" class="btn-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="menu">
                 <li>Inicio</li>
                 <li>Série</li>
                 <li>Filmes</li>
                 <li>Documentário</li>
             </ul>
+            <article class="modal hidden">
+                <div class="suspended-menu">
+                    <h1>Faça sua escolhe</h1>
+                    <ul>
+                        <li>Inicio</li>
+                        <li>Série</li>
+                        <li>Filmes</li>
+                        <li>Documentário</li>
+                    </ul>
+                </div>
+            </article>
         </nav>
         <section class="shade">
             <!-- <img src="./img/cstv.jpg" alt="Castel Vania"> -->
@@ -92,6 +109,7 @@
     <script src="js/owl/jquery.min.js" differ></script>
     <script src="js/owl/owl.carousel.min.js" differ></script>
     <script src="js/owl/main.js" differ></script>
+    <script src="js/app.js" differ></script>
 
 </body>
 

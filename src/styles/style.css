@@ -22,7 +22,6 @@ button {
 .bt {
     display: inline-flex;
     gap: 10px;
-    color: yellow;
 }
 .bt button {
     background:none;
@@ -30,7 +29,11 @@ button {
     color: #fff;
     font-weight: bolder;
 }
-button:active {
+.bt button:hover{
+    background: #fff;
+    color: #000;
+}
+.bt button:active {
     background: #fff;
     color: #000;
 }
@@ -40,7 +43,7 @@ button:active {
     flex-direction: row;
     justify-content: space-between;
     place-items: center;
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
 }
 .navigation img {
     width: 10rem;
@@ -51,6 +54,10 @@ button:active {
     gap: 0 0.8rem;
     text-transform: uppercase;
     color: var(--fonte)
+}
+.navigation ul li {
+    font: bold 0.9rem Arial, sans-serif;
+    color: #fff;
 }
 .shade{
     display: flex;
@@ -77,4 +84,59 @@ button:active {
 .description > :nth-child(1){
     font: bolder 1.25rem Arial, sans-serif;
     color: #fff;
+}
+.navigation> .hidden {
+    display: none;
+}
+.navigation > .btn-menu {
+    display: none;
+}
+@media (max-width: 768px) {
+    .navigation > .btn-menu {
+        display: block;
+    }
+    .navigation > .menu {
+        display: none;
+    }
+    .navigation > .hidden {
+        background: #85070790;
+        position: absolute;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        z-index: 100;
+    }
+    .suspended-menu{
+        background: #0970f7;
+        width: 90%;
+        height: 90%;
+        color: rgb(177, 226, 154);
+        border-radius: 0.8rem;
+        -webkit-border-radius: 0.8rem;
+        -moz-border-radius: 0.8rem;
+        -ms-border-radius: 0.8rem;
+        -o-border-radius: 0.8rem;
+    }
+    .suspended-menu>ul{
+        display: block;
+    }
+    .suspended-menu > ul li {
+        padding: 0.7rem;
+        border-radius: 0.35rem;
+        -webkit-border-radius: 0.35rem;
+        -moz-border-radius: 0.35rem;
+        -ms-border-radius: 0.35rem;
+        -o-border-radius: 0.35rem;
+        border: #fff solid 1px;
+        text-align: center;
+}
 }
