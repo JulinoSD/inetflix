@@ -1,6 +1,12 @@
 # NETFLIX INTERFACE CLONE
 ### Another one and lets push it up
 
-!['first image'](src/img/Inetflix.png)
+Este projeto é uma demonstração de como usar `:after`e `:before`, e também como fazer um modal do zero embora já existindo um popover nativo, como utilizar os conceitos de `flex-wrap` com `flex-grow`.
+Usei a biblioteca owl para fazer o carrossel.
 
-With this ugh work with finished the job, to create a **Netflix Interface Clone**, we hope that you enjoy everything, and, please, be free to do some changes you want. 
+Aprendi bastante com ele, e fica na minha lista de modelos para usar enquanto for fazendo meus futuros projetos.
+
+!['first image'](src/img/netflix-desktop.png)
+!['first image'](src/img/netflix-tablet.png)
+!['first image'](src/img/netflix-mobile.png)
+!['first image'](src/img/netflix-modal.png)

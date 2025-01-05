@@ -29,7 +29,7 @@ button {
     color: #fff;
     font-weight: bolder;
 }
-.bt-calltoaction button:hover, .btn:hover{
+.bt-calltoaction button:hover, .suspended-menu > ul > .btn:hover{
     background: #fff;
     color: #000;
 }
@@ -56,8 +56,11 @@ button {
     color: var(--fonte)
 }
 .navigation ul li {
-    font: bold 0.9rem Arial, sans-serif;
+    font: bold 1.2rem Arial, sans-serif;
     color: #fff;
+}
+.navigation ul li:hover {
+    color: #2a3d12;
 }
 .shade{
     display: flex;
@@ -72,6 +75,7 @@ button {
     width: 100%;
     background-image: url("../img/cstv.jpg");
     background-size: cover;
+    background-position: center;
     z-index: -1;
 }
 .description, .suspended-menu {
@@ -85,14 +89,14 @@ button {
     font: bolder 1.25rem Arial, sans-serif;
     color: #fff;
 }
-
 .navigation > .btn-menu {
     display: none;
 }
 .suspended-menu > input {
     padding: 0.35rem;
     border-radius: 0.35rem;
-    width: 250px;
+    width: 15.625rem;
+    height: 2.5rem;
     text-transform: capitalize;
 }
 .suspended-menu > input:active {
@@ -107,7 +111,7 @@ button {
     z-index: 2;
 }
 .modal {
-    background: #85070790;
+    background: #0a0a0a90;
     position: fixed;
     display: flex;
     place-content: center;
@@ -132,10 +136,10 @@ button {
     visibility: visible;
 }
 .suspended-menu{
-    background: #0970f7;
+    background: linear-gradient(45deg, rgb(22, 22, 22), rgb(10, 10, 10), #020000);
     width: 90%;
     height: 90%;
-    color: rgb(177, 226, 154);
+    color: rgb(64, 199, 2);
     border-radius: 0.8rem;
     -webkit-border-radius: 0.8rem;
     -moz-border-radius: 0.8rem;
@@ -148,7 +152,8 @@ button {
 }
 .suspended-menu>ul{
     display: inline-flex;
-    column-gap: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 .suspended-menu > ul li {
     padding: 0.7rem;
@@ -158,6 +163,7 @@ button {
     -ms-border-radius: 0.35rem;
     -o-border-radius: 0.35rem;
     border: #fff solid 1px;
+    font: 400 14px Arial, sans-serif;
     text-align: center;
 }
 @media (max-width: 768px) {
@@ -168,8 +174,21 @@ button {
         display: none;
     }
 }
+@media (max-width: 375px){
+    .suspended-menu > ul li {
+        flex-grow: 1;
+    }
+    .suspended-menu > input {
+        width: 100%;
+        text-transform: capitalize;
+    }
+    .navigation > img {
+        width: 6rem;
+    }
+}
 @media (min-width: 800px){
     .modal{
         display: none;
     }
 }
+
