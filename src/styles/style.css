@@ -18,6 +18,7 @@ button {
     -moz-border-radius: 0.35rem;
     -ms-border-radius: 0.35rem;
     -o-border-radius: 0.35rem;
+    cursor: pointer;
 }
 .bt-calltoaction {
     display: inline-flex;
@@ -56,8 +57,9 @@ button {
     color: var(--fonte)
 }
 .navigation ul li {
-    font: bold 1.2rem Arial, sans-serif;
+    font: bold 1rem Arial, sans-serif;
     color: #fff;
+    cursor: pointer;
 }
 .navigation ul li:hover {
     color: #2a3d12;
