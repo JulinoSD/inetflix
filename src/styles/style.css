@@ -12,13 +12,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 button {
-    padding: 0.7rem;
-    border-radius: 0.35rem;
-    -webkit-border-radius: 0.35rem;
-    -moz-border-radius: 0.35rem;
-    -ms-border-radius: 0.35rem;
-    -o-border-radius: 0.35rem;
+    padding: 0.35rem 0.7rem;
+    min-width: 90px;
     cursor: pointer;
+    font: 500 1rem Arial, sans-serif;
+    text-transform: uppercase;
 }
 .bt-calltoaction {
     display: inline-flex;

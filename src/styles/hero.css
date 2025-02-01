@@ -1,0 +1,93 @@
+.hero{
+    position: relative;
+    color: #fff;
+    background: linear-gradient(to left, #00000010, #00000020, #0eff0050);
+    width: 100vw;
+    height: 100vh;
+    padding-top: 2rem;
+}
+.hero::before{
+    position: absolute;
+    content: '';
+    background: url('../img/paisagem-natural-floresta.webp') no-repeat center 100%;
+    background-size: cover;
+    inset: 0;
+    z-index: -1;
+}
+.menu{
+    background: #00000060;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    height: 3rem;
+}
+.menu-list{
+    display: flex;
+    place-items: center;
+    gap: 3rem;
+}
+.menu-items{
+    text-transform: capitalize;
+}
+.know-how{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    height: calc(100% - 10rem);
+    row-gap: 2rem;
+}
+.relative{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 3rem;
+    margin-left: 5rem;
+}
+.city-title {
+    font: 400 1.5rem Arial, sans-serif;
+    text-transform: uppercase;
+    line-height: 0;
+    margin-top: 12rem;
+}
+.city-title span{
+    font: 700 4.5rem Arial, sans-serif;
+    text-transform: uppercase;
+}
+.city-description{
+    padding-left: 1rem;
+    border-left: 2px solid #fff;
+    max-width: 600px;
+}
+.callToAction-btn{
+    display: inline-flex;
+    column-gap: 2.5rem;
+}
+.callToAction-btn > .ct-btn{
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    min-width: 150px;
+    gap: 4rem;
+}
+.social-media {
+    margin-left: 2rem;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+}
+.social-media div {
+    background: #fff;
+    display: grid;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
